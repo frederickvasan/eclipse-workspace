@@ -81,6 +81,13 @@ public class BaseExecution {
 		a.waittime(2000);
 		a.closewindow();
 		
+		
+		
+	// Excel write
+		String excelpath1 = "C:\\Users\\fnobl\\eclipse-workspace\\Testselinum\\src\\test\\resources\\Excel\\Testingforwrite.xlsx";
+		String sheetname = "Writtingdata";
+		a.writedatatoexcel(0, 1, sheetname, excelpath1, "Path");
+	
 		System.out.println("End of the Road");
 }
 }

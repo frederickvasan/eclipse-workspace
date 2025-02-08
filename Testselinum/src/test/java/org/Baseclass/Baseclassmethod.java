@@ -89,7 +89,6 @@ public class Baseclassmethod {
 //		String text11 = options.get(i).getText();
 //		System.out.println(text11);
 		return options;
-
 	}
 	//9
 	public String getdatafromexcel(int rowno, int cellno, String sheetname, String pathname) throws Exception {
@@ -186,7 +185,7 @@ public class Baseclassmethod {
     	 return elementpartiallink;
 	}
    //21
-     public void writedatatoexcel(int rowno, int cellno, String sheetname, String pathname) throws Exception {
+     public void writedatatoexcel(int rowno, int cellno, String sheetname, String pathname, String data) throws Exception {
     	 File file = new File(pathname);
     	 XSSFWorkbook workbook = new XSSFWorkbook(file);
     	 XSSFSheet sheet = workbook.createSheet(sheetname);
@@ -202,6 +201,7 @@ public class Baseclassmethod {
     	 cell.setCellValue(data);
     	 FileOutputStream fileOutputStream = new FileOutputStream(file);
     	 workbook.write(fileOutputStream);
+    	 
     	 
     	 System.out.println("Excel written successfully");
 

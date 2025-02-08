@@ -19,7 +19,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class excelwritedemo {
 	public static void main(String[] args) throws Exception {
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://google.com");
+		driver.get("https://facebook.com");
 		 List<WebElement> links = driver.findElements(By.tagName("a"));
 		 driver.manage().window().maximize();
 //	    FileInputStream fileInputStream = new FileInputStream("C:\\Users\\deepa\\eclipse-workspace\\test\\src\\test\\resources\\Test.xlsx");
@@ -33,9 +33,10 @@ public class excelwritedemo {
 			 Cell cell2 = row.createCell(1);
 			 cell2.setCellValue(link.getAttribute("href"));
 		}
-		 FileOutputStream fileoutp = new FileOutputStream(new File("C:\\Users\\deepa\\eclipse-workspace\\test\\src\\test\\resources\\Test.xlsx"));
+		 FileOutputStream fileoutp = new FileOutputStream(new File("C:\\Users\\fnobl\\eclipse-workspace\\test\\src\\test\\resources\\Test.xlsx"));
 		 excelhand.write(fileoutp);
 		 fileoutp.close();
+		 driver.close();
 	}
 
 }
