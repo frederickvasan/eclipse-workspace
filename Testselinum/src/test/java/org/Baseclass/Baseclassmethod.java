@@ -61,10 +61,8 @@ public class Baseclassmethod {
 	
 //5 
 	
-	public WebElement sendvalues(WebElement element, String data) {
+	public void sendvalues(WebElement element, String data) {
 		element.sendKeys(data);
-		return element;
-
 	}
 	
 //6
