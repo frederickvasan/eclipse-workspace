@@ -213,7 +213,22 @@ public class Baseclassmethod {
     	 return executor;
 
 	}
-	
+     
+    //23
+     public void switchtabaccept() {
+    	 driver.switchTo().alert().accept();
+	}
+    //24
+     public void switchtabdismiss() {
+    	 driver.switchTo().alert().dismiss();
+	}
+    
+     //25
+     public String switchtabgettext() {
+    	driver.switchTo().alert().getText();
+    	return null    	
+    	
+	}
 }
 
 
