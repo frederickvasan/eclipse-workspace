@@ -42,7 +42,11 @@
     <version>6.14.3</version>
     <scope>test</scope>
 </dependency>
-
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-api</artifactId>
+    <version>4.28.1</version>
+</dependency>
 
   </dependencies>
 </project>

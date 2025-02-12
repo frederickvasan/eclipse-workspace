@@ -20,7 +20,9 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.junit.BeforeClass;
+import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -41,6 +43,7 @@ public class Baseclassmethod {
 
 	}
 	//2
+	@Test
 	public WebElement findelementID(String id) {
 		WebElement elementId = driver.findElement(By.id(id));
 		return elementId;		
@@ -202,6 +205,12 @@ public class Baseclassmethod {
     	 
     	 
     	 System.out.println("Excel written successfully");
+
+	}
+   //22
+     public JavascriptExecutor executorscript(String sc ) { 
+    	 JavascriptExecutor executor = (JavascriptExecutor) driver;
+    	 return executor;
 
 	}
 	
