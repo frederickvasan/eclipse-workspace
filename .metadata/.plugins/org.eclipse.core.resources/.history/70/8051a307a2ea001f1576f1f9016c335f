@@ -1,0 +1,18 @@
+package org.Baseclass;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class base2 {
+	
+	WebDriver driver;
+	
+	public static void browserlaunch(String url) {
+		
+		driver = new ChromeDriver();
+		driver.get(url);
+		driver.manage().window().maximize();
+
+	}
+
+}

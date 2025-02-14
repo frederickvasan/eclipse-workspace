@@ -89,22 +89,30 @@ public class BaseExecution {
 //		a.writedatatoexcel(0, 1, sheetname, excelpath1, "Path");
 		
   //SWITCH TAB
+		
 		a.browserlaunch("https://demo.automationtesting.in/Alerts.html");
 		a.clickevent(a.findelementxpath("//button[@onclick='alertbox()']"));
 		a.waittime(2000);
 		a.switchtabaccept();
 		a.clickevent(a.findelementxpath("//a [text()='Alert with OK & Cancel ']"));
-		a.waittime(1000);
+		a.waittime(2000);
 		a.clickevent(a.findelementxpath("//button[@onclick='confirmbox()']"));
-		a.waittime(1000);
+		a.waittime(2000);
 		a.switchtabdismiss();
+		a.waittime(2000);
 		a.clickevent(a.findelementxpath("//a [text()='Alert with Textbox ']"));
-		a.waittime(1000);
+		a.waittime(2000);
 		a.clickevent(a.findelementxpath("//button[@onclick='promptbox()']"));
-		String text = a.switchtabgettext();
-		System.out.println(text);
+		String alerttext =  a.switchtabgettext();
+		System.out.println(alerttext);
+		a.waittime(2000);
+		a.switchtabsendkeys("Hi There");
+		a.waittime(3000);
 		a.closewindow();
 	
 		System.out.println("End of the Road");
 }
+	
 }
+
+

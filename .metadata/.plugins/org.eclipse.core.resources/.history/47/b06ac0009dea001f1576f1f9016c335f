@@ -1,0 +1,18 @@
+package org.Baseclass;
+
+import org.Baseclass.Baseclassmethod;
+import org.testng.annotations.BeforeClass;
+
+public class extendstestanno extends Baseclassmethod {
+	
+	
+	@BeforeClass
+	public void TC1() {
+		
+		browserlaunch("https://www.facebook.com/");
+		System.out.println("TC1 @BeforeClass");
+		
+	}
+	
+
+}

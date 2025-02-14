@@ -92,7 +92,6 @@ INDEX VERSION 1.134+C:\Users\fnobl\eclipse-workspace\.metadata\.plugins\org.ecli
 3261269281.index
 2557464484.index
 1250801466.index
-3219757459.index
 490754170.index
 920788625.index
 2529258296.index

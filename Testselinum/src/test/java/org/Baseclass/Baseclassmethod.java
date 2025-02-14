@@ -21,6 +21,7 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
@@ -30,20 +31,21 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.BeforeGroups;
 
 public class Baseclassmethod {
 	
-	WebDriver driver;
+	 WebDriver driver;
 	//1
-	@BeforeClass
-	public void browserlaunch(String url) {
+	
+	public  void browserlaunch(String url) {
 		driver = new ChromeDriver();
 		driver.get(url);
 		driver.manage().window().maximize();
 
 	}
 	//2
-	@Test
+	
 	public WebElement findelementID(String id) {
 		WebElement elementId = driver.findElement(By.id(id));
 		return elementId;		
@@ -69,7 +71,7 @@ public class Baseclassmethod {
 	}
 	
 //6
-	public void closewindow() {
+	public  void closewindow() {
 		 driver.quit();
 
 	}
@@ -208,7 +210,7 @@ public class Baseclassmethod {
 
 	}
    //22
-     public JavascriptExecutor executorscript(String sc ) { 
+     public JavascriptExecutor executorscript(String sc) { 
     	 JavascriptExecutor executor = (JavascriptExecutor) driver;
     	 return executor;
 
@@ -225,9 +227,13 @@ public class Baseclassmethod {
     
      //25
      public String switchtabgettext() {
-    	driver.switchTo().alert().getText();
-    	return null    	
-    	
+    	Alert alert = driver.switchTo().alert();
+    	return alert.getText();  	
+	}
+     
+     public void switchtabsendkeys(String sendtext) {
+    	 Alert text = driver.switchTo().alert();
+    	 text.sendKeys(sendtext);
 	}
 }
 
