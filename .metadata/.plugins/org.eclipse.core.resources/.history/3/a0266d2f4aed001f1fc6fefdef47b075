@@ -1,0 +1,16 @@
+package org.Baseclass;
+
+import org.Baseclass.*;
+import org.testng.annotations.BeforeClass;
+
+public class testngbaseexample extends Baseclassmethod {
+	
+	@BeforeClass
+	public void launch() {
+		browserlaunch("https://www.facebook.com/");
+		System.out.println("Browser lanched");
+	}
+	
+	
+
+}

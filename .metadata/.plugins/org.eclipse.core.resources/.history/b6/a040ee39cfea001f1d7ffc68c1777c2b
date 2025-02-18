@@ -1,0 +1,41 @@
+package org.Baseclass;
+
+import org.Baseclass.base2;
+import org.junit.After;
+import org.junit.Before;
+import org.Baseclass.Baseclassmethod;
+
+
+
+public class extendstestanno extends Baseclassmethod {
+	
+	
+//	@Beforeclass
+	public  void tc_1() {
+		
+		browserlaunch("https://www.facebook.com/");
+		System.out.println("TC1 @BeforeClass");
+		
+	}
+	
+//	@AfterClass
+	public  void tc_2() {
+		closewindow();
+		System.out.println("Login page unit testing completed");
+		System.out.println("ClassA tc_2 @AfterClass");
+
+	}
+	
+	@Before
+	public void tc_3() throws Exception {
+		long timeMillis = System.currentTimeMillis();
+		System.out.println("start time : "+ timeMillis);
+		screenshotpic();
+		System.out.println("ClassA tc_3 @Before");
+	}
+	
+	@After
+	
+	
+
+}

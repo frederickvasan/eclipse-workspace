@@ -55,4 +55,8 @@ public class testngexamp1 {
 	System.out.println("ClassA tc_9 @Test");
 
 	}
+	@Test
+	private void tc_91() {
+	System.out.println("ClassA tc_91 @Test");
+	}
 }

@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.openqa.selenium.WebElement;
 
-public class BaseExecution {
+public class BaseExecution extends Baseclassmethod{
 	
 	public static void main(String[] args) throws Exception {
 		
@@ -18,15 +18,15 @@ public class BaseExecution {
 //		a.sendvalues(test, "ForTesting");
 //		a.doubleclickevent(test);
 //		a.waittime(2000);
-		a.browserlaunch("https://demo.automationtesting.in/Register.html");
+		browserlaunch("https://demo.automationtesting.in/Register.html");
 		a.selectdropdownop(a.findelementID("Skills"), 3);
 		List<WebElement> options = a.printdropdown(a.findelementID("Skills"));
 		for (int i = 0; i < options.size(); i++) {
 		String text11 = options.get(i).getText();
 		System.out.println(text11);
 		}
-		a.closewindow();
-		a.browserlaunch("https://www.facebook.com/");
+		closewindow();
+		browserlaunch("https://www.facebook.com/");
 		String excelpath = "C:\\Users\\fnobl\\eclipse-workspace\\Testselinum\\src\\test\\resources\\Excel\\Framework.xlsx";
 		String dataformexcel = a.getdatafromexcel(0,0,"testdata",excelpath);
 //		WebElement test = a.findelementID("email");
@@ -40,10 +40,10 @@ public class BaseExecution {
 		
 		a.waittime(2000);
 		a.screenshotpic();
-		a.closewindow();
+		closewindow();
 		
 //DRAG AND DROP		
-		a.browserlaunch("https://demo.guru99.com/test/drag_drop.html");
+		browserlaunch("https://demo.guru99.com/test/drag_drop.html");
 		 WebElement source = a.findelementxpath("//a[text()=' BANK ']");
 		 WebElement destination = a.findelementID("bank");
 		
@@ -55,31 +55,31 @@ public class BaseExecution {
 	    a.draganddrop(source1, destination1);
 	    a.waittime(2000);
 	    a.screenshotpic();
-	    a.closewindow();
+	    closewindow();
 		
 		
 //	CONTEXT CLICK
 		
-		a.browserlaunch("https://www.google.com/");
+		browserlaunch("https://www.google.com/");
 		WebElement test1 = a.findelementxpath("//a[text()='Gmail']");
 		a.contextclickevent(test1);
 		a.waittime(2000);
-		a.closewindow();
+		closewindow();
 		
 // MOVE TO ELEMENT EXAMPLE
-		a.browserlaunch("https://www.greenstechnologys.com/");
+		browserlaunch("https://www.greenstechnologys.com/");
 		WebElement courses = a.findelementxpath("//a[text()='COURSES']");
 		a.movetoelementevent(courses);
 		a.screenshotpic();
 		a.waittime(2000);
-		a.closewindow();
+		closewindow();
 	
 //Select by Index example
-		a.browserlaunch("https://demo.automationtesting.in/Register.html");
+		browserlaunch("https://demo.automationtesting.in/Register.html");
 		WebElement hob =  a.findelementxpath("(//input[@type='checkbox'])[3]");
 		a.clickevent(hob);
 		a.waittime(2000);
-		a.closewindow();
+		closewindow();
 		
 		
 		
@@ -90,7 +90,7 @@ public class BaseExecution {
 		
   //SWITCH TAB
 		
-		a.browserlaunch("https://demo.automationtesting.in/Alerts.html");
+		browserlaunch("https://demo.automationtesting.in/Alerts.html");
 		a.clickevent(a.findelementxpath("//button[@onclick='alertbox()']"));
 		a.waittime(2000);
 		a.switchtabaccept();
@@ -108,7 +108,7 @@ public class BaseExecution {
 		a.waittime(2000);
 		a.switchtabsendkeys("Hi There");
 		a.waittime(3000);
-		a.closewindow();
+		closewindow();
 	
 		System.out.println("End of the Road");
 }

@@ -19,8 +19,6 @@ import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.junit.BeforeClass;
-import org.junit.Test;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -31,14 +29,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeGroups;
 
 public class Baseclassmethod {
 	
-	 WebDriver driver;
+	 static WebDriver driver;
 	//1
-	
-	public  void browserlaunch(String url) {
+//	@BeforeClass
+	public static void browserlaunch(String url) {
 		driver = new ChromeDriver();
 		driver.get(url);
 		driver.manage().window().maximize();
@@ -71,7 +70,7 @@ public class Baseclassmethod {
 	}
 	
 //6
-	public  void closewindow() {
+	public static void closewindow() {
 		 driver.quit();
 
 	}
@@ -230,10 +229,16 @@ public class Baseclassmethod {
     	Alert alert = driver.switchTo().alert();
     	return alert.getText();  	
 	}
-     
+     //26
      public void switchtabsendkeys(String sendtext) {
     	 Alert text = driver.switchTo().alert();
     	 text.sendKeys(sendtext);
+	}
+     //27
+     public String getattributeevent(WebElement element, String value) {
+    	 element.getAttribute(value);
+    	 return value;
+
 	}
 }
 
