@@ -1,0 +1,45 @@
+package tests;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.*;
+import pages.LoginPage;
+import pages.HomePage;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class LoginTest {
+    private WebDriver driver;
+    private LoginPage loginPage;
+    private HomePage homePage;
+
+    @BeforeClass
+    public void setUp() {
+       WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        loginPage = new LoginPage(driver);
+        homePage = new HomePage(driver);
+    }
+
+    @Test
+    public void testSuccessfulLogin() {
+        driver.get("https://demo.guru99.com/test/login.html");
+        loginPage.login("validUser", "validPassword");
+        Assert.assertEquals(homePage.getWelcomeMessage(), "Welcome, User!");
+    }
+
+    @Test
+    public void testFailedLogin() {
+        driver.get("https://example.com/login");
+        loginPage.login("invalidUser", "invalidPassword");
+        Assert.assertEquals(loginPage.getErrorMessage(), "Invalid credentials");
+    }
+
+    @AfterClass
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
+    }
+} 

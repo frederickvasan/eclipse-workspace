@@ -1,9 +1,0 @@
-package org.Baseclass;
-
-import Baseclass.Baseclassmethod;
-
-
-
-public class extendstestanno extends Baseclassmethod {
-
-}
