@@ -1,0 +1,58 @@
+package org.Baseclass;
+
+import org.Baseclass.*;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeGroups;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class testngbaseexample extends Baseclassmethod {
+	
+	@BeforeClass
+	public void launch() {
+		browserlaunch("https://www.facebook.com/");
+		System.out.println("Browser lanched");
+	}
+	@BeforeTest
+	public void screenshot1() throws Exception {
+		waittime(2000);
+		screenshotpic();
+	}
+	@BeforeClass
+	
+	public void exceloption() throws Exception {
+		String excelpath = "C:\\Users\\fnobl\\eclipse-workspace\\Testselinum\\src\\test\\resources\\Excel\\Framework.xlsx";
+		String dataformexcel = getdatafromexcel(0,0,"testdata",excelpath);
+
+	}
+	
+	@Test
+	public void logintest() {
+		sendvalues(findelementID("email"), "Testing@email.com");
+		sendvalues(findelementID("pass"), "password");
+		clickevent(findelementname("login"));
+	
+	}
+	
+	@AfterMethod
+	public void screenshotd() throws Exception {
+		waittime(2000);
+		screenshotpic();
+		
+	}
+	
+	
+	@AfterClass
+	public void closebrowser1() {
+		closewindow();
+		
+
+	}
+	
+
+}
