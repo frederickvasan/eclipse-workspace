@@ -1,0 +1,11 @@
+package org.Baseclass;
+
+public class datapro  extends Baseclassmethod {
+         
+	private void fblogin() {
+		browserlaunch("https://www.facebook.com/");
+		sendvalues(findelementclassname("email"), username);
+		sendvalues(find, null)
+	}
+	
+}

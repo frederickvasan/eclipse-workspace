@@ -1,37 +1,264 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-27T13:12:48Z" name="Default suite" finished-at="2025-02-27T13:12:57Z" duration-ms="8809">
+  <suite started-at="2025-02-28T12:47:57Z" name="Suite" finished-at="2025-02-28T12:48:59Z" duration-ms="61798">
     <groups>
     </groups>
-    <test started-at="2025-02-27T13:12:48Z" name="Default test" finished-at="2025-02-27T13:12:57Z" duration-ms="8809">
-      <class name="org.Baseclass.testngbaseexample">
-        <test-method is-config="true" signature="launch()[pri:0, instance:org.Baseclass.testngbaseexample@2ab4bc72]" started-at="2025-02-27T13:12:48Z" name="launch" finished-at="2025-02-27T13:12:51Z" duration-ms="2952" status="PASS">
+    <test started-at="2025-02-28T12:47:57Z" name="chrometest" finished-at="2025-02-28T12:48:12Z" duration-ms="15201">
+      <class name="org.Baseclass.datapro">
+        <test-method is-config="true" signature="browsername(java.lang.String)[pri:0, instance:org.Baseclass.datapro@2ab4bc72]" started-at="2025-02-28T12:47:57Z" name="browsername" finished-at="2025-02-28T12:48:01Z" duration-ms="3372" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method is-config="true" signature="screenshot1()[pri:0, instance:org.Baseclass.testngbaseexample@2ab4bc72]" started-at="2025-02-27T13:12:51Z" name="screenshot1" finished-at="2025-02-27T13:12:53Z" duration-ms="2197" status="PASS">
+        </test-method> <!-- browsername -->
+        <test-method signature="fblogin(java.lang.String, java.lang.String)[pri:0, instance:org.Baseclass.datapro@2ab4bc72]" started-at="2025-02-28T12:48:01Z" name="fblogin" data-provider="fblogin" finished-at="2025-02-28T12:48:03Z" duration-ms="2663" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[frederick@email.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[frederick1234!]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- screenshot1 -->
-        <test-method is-config="true" signature="exceloption()[pri:0, instance:org.Baseclass.testngbaseexample@2ab4bc72]" started-at="2025-02-27T13:12:53Z" name="exceloption" finished-at="2025-02-27T13:12:54Z" duration-ms="601" status="PASS">
+        </test-method> <!-- fblogin -->
+        <test-method is-config="true" signature="browsername(java.lang.String)[pri:0, instance:org.Baseclass.datapro@2ab4bc72]" started-at="2025-02-28T12:48:03Z" name="browsername" finished-at="2025-02-28T12:48:06Z" duration-ms="2286" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- exceloption -->
-        <test-method signature="logintest()[pri:0, instance:org.Baseclass.testngbaseexample@2ab4bc72]" started-at="2025-02-27T13:12:54Z" name="logintest" finished-at="2025-02-27T13:12:54Z" duration-ms="246" status="PASS">
+        </test-method> <!-- browsername -->
+        <test-method signature="fblogin(java.lang.String, java.lang.String)[pri:0, instance:org.Baseclass.datapro@2ab4bc72]" started-at="2025-02-28T12:48:06Z" name="fblogin" data-provider="fblogin" finished-at="2025-02-28T12:48:08Z" duration-ms="2478" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[noble@email.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[noble1234!]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logintest -->
-        <test-method is-config="true" signature="screenshotd()[pri:0, instance:org.Baseclass.testngbaseexample@2ab4bc72]" started-at="2025-02-27T13:12:54Z" name="screenshotd" finished-at="2025-02-27T13:12:56Z" duration-ms="2535" status="PASS">
+        </test-method> <!-- fblogin -->
+        <test-method is-config="true" signature="browsername(java.lang.String)[pri:0, instance:org.Baseclass.datapro@2ab4bc72]" started-at="2025-02-28T12:48:08Z" name="browsername" finished-at="2025-02-28T12:48:10Z" duration-ms="1877" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- screenshotd -->
-        <test-method is-config="true" signature="closebrowser1()[pri:0, instance:org.Baseclass.testngbaseexample@2ab4bc72]" started-at="2025-02-27T13:12:56Z" name="closebrowser1" finished-at="2025-02-27T13:12:57Z" duration-ms="254" status="PASS">
+        </test-method> <!-- browsername -->
+        <test-method signature="fblogin(java.lang.String, java.lang.String)[pri:0, instance:org.Baseclass.datapro@2ab4bc72]" started-at="2025-02-28T12:48:10Z" name="fblogin" data-provider="fblogin" finished-at="2025-02-28T12:48:12Z" duration-ms="2487" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vasanth@email.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vasanth1234!]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closebrowser1 -->
-      </class> <!-- org.Baseclass.testngbaseexample -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- fblogin -->
+      </class> <!-- org.Baseclass.datapro -->
+    </test> <!-- chrometest -->
+    <test started-at="2025-02-28T12:48:12Z" name="firefox" finished-at="2025-02-28T12:48:39Z" duration-ms="26197">
+      <class name="org.Baseclass.datapro">
+        <test-method is-config="true" signature="browsername(java.lang.String)[pri:0, instance:org.Baseclass.datapro@55de24cc]" started-at="2025-02-28T12:48:12Z" name="browsername" finished-at="2025-02-28T12:48:18Z" duration-ms="6048" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browsername -->
+        <test-method signature="fblogin(java.lang.String, java.lang.String)[pri:0, instance:org.Baseclass.datapro@55de24cc]" started-at="2025-02-28T12:48:18Z" name="fblogin" data-provider="fblogin" finished-at="2025-02-28T12:48:22Z" duration-ms="3262" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[frederick@email.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[frederick1234!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fblogin -->
+        <test-method is-config="true" signature="browsername(java.lang.String)[pri:0, instance:org.Baseclass.datapro@55de24cc]" started-at="2025-02-28T12:48:22Z" name="browsername" finished-at="2025-02-28T12:48:27Z" duration-ms="5329" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browsername -->
+        <test-method signature="fblogin(java.lang.String, java.lang.String)[pri:0, instance:org.Baseclass.datapro@55de24cc]" started-at="2025-02-28T12:48:27Z" name="fblogin" data-provider="fblogin" finished-at="2025-02-28T12:48:30Z" duration-ms="3010" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[noble@email.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[noble1234!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fblogin -->
+        <test-method is-config="true" signature="browsername(java.lang.String)[pri:0, instance:org.Baseclass.datapro@55de24cc]" started-at="2025-02-28T12:48:30Z" name="browsername" finished-at="2025-02-28T12:48:36Z" duration-ms="5523" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browsername -->
+        <test-method signature="fblogin(java.lang.String, java.lang.String)[pri:0, instance:org.Baseclass.datapro@55de24cc]" started-at="2025-02-28T12:48:36Z" name="fblogin" data-provider="fblogin" finished-at="2025-02-28T12:48:39Z" duration-ms="3020" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vasanth@email.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vasanth1234!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fblogin -->
+      </class> <!-- org.Baseclass.datapro -->
+    </test> <!-- firefox -->
+    <test started-at="2025-02-28T12:48:39Z" name="Edge" finished-at="2025-02-28T12:48:59Z" duration-ms="20347">
+      <class name="org.Baseclass.datapro">
+        <test-method is-config="true" signature="browsername(java.lang.String)[pri:0, instance:org.Baseclass.datapro@25df00a0]" started-at="2025-02-28T12:48:39Z" name="browsername" finished-at="2025-02-28T12:48:43Z" duration-ms="4024" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browsername -->
+        <test-method signature="fblogin(java.lang.String, java.lang.String)[pri:0, instance:org.Baseclass.datapro@25df00a0]" started-at="2025-02-28T12:48:43Z" name="fblogin" data-provider="fblogin" finished-at="2025-02-28T12:48:46Z" duration-ms="3764" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[frederick@email.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[frederick1234!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fblogin -->
+        <test-method is-config="true" signature="browsername(java.lang.String)[pri:0, instance:org.Baseclass.datapro@25df00a0]" started-at="2025-02-28T12:48:46Z" name="browsername" finished-at="2025-02-28T12:48:49Z" duration-ms="2577" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browsername -->
+        <test-method signature="fblogin(java.lang.String, java.lang.String)[pri:0, instance:org.Baseclass.datapro@25df00a0]" started-at="2025-02-28T12:48:49Z" name="fblogin" data-provider="fblogin" finished-at="2025-02-28T12:48:53Z" duration-ms="3669" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[noble@email.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[noble1234!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fblogin -->
+        <test-method is-config="true" signature="browsername(java.lang.String)[pri:0, instance:org.Baseclass.datapro@25df00a0]" started-at="2025-02-28T12:48:53Z" name="browsername" finished-at="2025-02-28T12:48:55Z" duration-ms="2613" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browsername -->
+        <test-method signature="fblogin(java.lang.String, java.lang.String)[pri:0, instance:org.Baseclass.datapro@25df00a0]" started-at="2025-02-28T12:48:55Z" name="fblogin" data-provider="fblogin" finished-at="2025-02-28T12:48:59Z" duration-ms="3696" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vasanth@email.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vasanth1234!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fblogin -->
+      </class> <!-- org.Baseclass.datapro -->
+    </test> <!-- Edge -->
+  </suite> <!-- Suite -->
 </testng-results>

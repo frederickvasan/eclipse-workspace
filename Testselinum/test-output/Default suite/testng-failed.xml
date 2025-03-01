@@ -3,16 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.Baseclass.testngbaseexampleTest">
+      <class name="org.Baseclass.datapro">
         <methods>
-          <include name="screenshotdTest"/>
-          <include name="screenshot1Test"/>
-          <include name="exceloptionTest"/>
-          <include name="closebrowser1Test"/>
-          <include name="logintestTest"/>
-          <include name="launchTest"/>
+          <include name="fblogin"/>
         </methods>
-      </class> <!-- org.Baseclass.testngbaseexampleTest -->
+      </class> <!-- org.Baseclass.datapro -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
