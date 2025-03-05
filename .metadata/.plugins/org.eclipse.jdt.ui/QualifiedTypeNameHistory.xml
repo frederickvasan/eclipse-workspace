@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.Object"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.grid.Main"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.interactions.Actions"/>
     <fullyQualifiedTypeName name="java.awt.Robot"/>
     <fullyQualifiedTypeName name="java.awt.event.KeyEvent"/>
@@ -36,7 +33,6 @@
     <fullyQualifiedTypeName name="org.apache.poi.xssf.usermodel.XSSFWorkbook"/>
     <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
-    <fullyQualifiedTypeName name="org.Baseclass.Baseclassmethod"/>
     <fullyQualifiedTypeName name="org.checkerframework.checker.units.qual.A"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.support.FindBy"/>
@@ -60,4 +56,8 @@
     <fullyQualifiedTypeName name="org.openqa.selenium.safari.SafariDriver"/>
     <fullyQualifiedTypeName name="io.github.bonigarcia.wdm.OperaDriverManager"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.edge.EdgeDriver"/>
+    <fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
+    <fullyQualifiedTypeName name="io.cucumber.junit.Cucumber"/>
+    <fullyQualifiedTypeName name="io.cucumber.junit.CucumberOptions"/>
+    <fullyQualifiedTypeName name="org.Baseclass.Baseclassmethod"/>
 </qualifiedTypeNameHistroy>

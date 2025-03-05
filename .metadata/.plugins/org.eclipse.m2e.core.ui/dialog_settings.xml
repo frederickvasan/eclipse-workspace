@@ -56,12 +56,12 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="Testselinum"/>
+			<item value="orgCucumber"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="Testselinum"/>
+			<item value="cucumbertest"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
