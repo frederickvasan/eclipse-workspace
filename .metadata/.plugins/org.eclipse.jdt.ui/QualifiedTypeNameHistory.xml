@@ -1,19 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.openqa.selenium.interactions.Actions"/>
-    <fullyQualifiedTypeName name="java.awt.Robot"/>
-    <fullyQualifiedTypeName name="java.awt.event.KeyEvent"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.JavascriptExecutor"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.TakesScreenshot"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.OutputType"/>
-    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
-    <fullyQualifiedTypeName name="org.apache.poi.sl.usermodel.Sheet"/>
-    <fullyQualifiedTypeName name="com.google.common.collect.Table.Cell"/>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
-    <fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Workbook"/>
-    <fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Sheet"/>
-    <fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Row"/>
     <fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Cell"/>
     <fullyQualifiedTypeName name="org.junit.Before"/>
     <fullyQualifiedTypeName name="org.junit.Test"/>
@@ -23,7 +9,6 @@
     <fullyQualifiedTypeName name="org.testng.annotations.AfterTest"/>
     <fullyQualifiedTypeName name="java.awt.event.InvocationEvent"/>
     <fullyQualifiedTypeName name="org.Baseclass.BaseExecution"/>
-    <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="net.bytebuddy.implementation.InvokeDynamic.InvocationProvider.ArgumentProvider.ForBooleanConstant"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.devtools.v85.network.Network.GetResponseBodyForInterceptionResponse"/>
     <fullyQualifiedTypeName name="org.statements.forlooptest"/>
@@ -60,4 +45,19 @@
     <fullyQualifiedTypeName name="io.cucumber.junit.Cucumber"/>
     <fullyQualifiedTypeName name="io.cucumber.junit.CucumberOptions"/>
     <fullyQualifiedTypeName name="org.Baseclass.Baseclassmethod"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="org.json.simple.parser.JSONParser"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.Map.Entry"/>
+    <fullyQualifiedTypeName name="io.cucumber.cienvironment.internal.com.eclipsesource.json.JsonObject"/>
+    <fullyQualifiedTypeName name="javax.swing.text.html.HTMLEditorKit.Parser"/>
+    <fullyQualifiedTypeName name="jdk.internal.org.jline.reader.Parser"/>
+    <fullyQualifiedTypeName name="jdk.internal.org.jline.reader.Parser.ParseContext"/>
+    <fullyQualifiedTypeName name="org.json.simple.parser.ParseException"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="org.json.simple.JSONObject"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.databind.ObjectMapper"/>
+    <fullyQualifiedTypeName name="io.cucumber.core.internal.com.fasterxml.jackson.databind.ObjectMapper"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

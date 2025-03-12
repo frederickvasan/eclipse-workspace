@@ -70,8 +70,8 @@
 		<item key="expanded8" value="false"/>
 	</section>
 	<section name="NewClassCreationWizard.dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="618"/>
-		<item key="DIALOG_Y_ORIGIN" value="37"/>
+		<item key="DIALOG_X_ORIGIN" value="957"/>
+		<item key="DIALOG_Y_ORIGIN" value="169"/>
 		<item key="DIALOG_WIDTH" value="700"/>
 		<item key="DIALOG_HEIGHT" value="726"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.509434|0|WINDOWS|1|-14|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
@@ -117,5 +117,12 @@
 		<item key="DIALOG_WIDTH" value="700"/>
 		<item key="DIALOG_HEIGHT" value="464"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.509434|0|WINDOWS|1|-14|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="RefactoringWizard.preview">
+		<item key="width" value="600"/>
+		<item key="height" value="400"/>
+	</section>
+	<section name="SelfEncapsulateFieldWizard">
+		<item key="GenerateJavadoc" value="false"/>
 	</section>
 </section>

@@ -1,0 +1,13 @@
+{
+	"empName":"Frederick Noble",
+	"empId": 3054,
+	"empSkills":["Manual Testing","Java", "Selenium","Testng","BDD Cucumber"],
+	"companyName":"Foxconn",
+	"empAdd": {
+		"streetName": "Natesan Nagar",
+		"districtWard":"Virugambakkam",
+		"city":"chennai"
+		},
+	"middleName": null,
+	"maritalStatus":true	
+}
