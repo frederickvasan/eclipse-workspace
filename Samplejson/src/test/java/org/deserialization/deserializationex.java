@@ -5,8 +5,6 @@ import java.io.FileReader;
 import java.util.ArrayList;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-
-
 public class deserializationex {
 
 	  public static void main(String[] args) throws Exception {
@@ -21,22 +19,23 @@ public class deserializationex {
 		  String empName = employee.getempName();
 		  System.out.println("Employee Name :" +empName);
 		  System.out.println("Employee ID : "+employee.getEmpId());
-	//	  System.out.println(employee.getEmpAdd());
+//		  System.out.println(employee.getEmpAdd());
 		  System.out.println("Employee Middlename :" +employee.getMiddleName());
 		  System.out.println(employee.getEmpSkills());
 		  System.out.println(employee.isMaritalStatus());
+		  System.out.println("************************************************************************************************");
 		  
 	     empAdd empaddress = employee.getEmpAdd();
 	     System.out.println(empaddress.getStreetName());
 	     System.out.println(empaddress.getDistrictWard());
 	     System.out.println(empaddress.getcity());
-	     
+	     System.out.println("************************************************************************************************");
 		   
-//		  ArrayList<String> empskills = employee.getEmpSkills();
-//		  for (int i = 0; i < empskills.size(); i++) {
-//			  System.out.println(empskills);
-//			
-//		}
+		  ArrayList<String> empskills = employee.getEmpSkills();
+		  for (int i = 0; i < empskills.size(); i++) {
+			  System.out.println(empskills.get(i));
+			
+		}
 		  
 	}
 }
