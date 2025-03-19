@@ -28,7 +28,4 @@ public class serializationex {
 	System.out.println("Writing happened !!!!!!");
 		
 	}
-	
-	
-
 }

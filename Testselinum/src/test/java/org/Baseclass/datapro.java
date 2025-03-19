@@ -37,7 +37,7 @@ public class datapro extends Baseclassmethod {
 		sendvalues(findelementID("email"), username);
 		sendvalues(findelementID("pass"), pass);
 		waittime(2000);
-//		screenshotpic();
+		//		screenshotpic();
 		closewindow();
 		
 	}

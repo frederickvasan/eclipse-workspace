@@ -6,6 +6,7 @@
       <class name="org.Baseclass.datapro">
         <methods>
           <include name="fblogin"/>
+          <include name="browsername"/>
         </methods>
       </class> <!-- org.Baseclass.datapro -->
     </classes>

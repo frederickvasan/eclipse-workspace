@@ -34,7 +34,7 @@ import org.testng.annotations.BeforeGroups;
 
 public class Baseclassmethod {
 	
-	 static WebDriver driver;
+	  public static WebDriver driver;
 	//1
 //	@BeforeClass
 	public static void browserlaunch(String url) {
@@ -45,19 +45,19 @@ public class Baseclassmethod {
 	}
 	//2
 	
-	public WebElement findelementID(String id) {
+	public static WebElement findelementID(String id) {
 		WebElement elementId = driver.findElement(By.id(id));
 		return elementId;		
 
 	}
 	//3
-	public WebElement findelementname(String name) {
+	public static WebElement findelementname(String name) {
 		WebElement elementname = driver.findElement(By.name(name));
 		return elementname;		
 
 	}
 //4
-	public WebElement findelementxpath(String xpath) {
+	public static WebElement findelementxpath(String xpath) {
 		WebElement elementxpath = driver.findElement(By.xpath(xpath));
 		return elementxpath;		
 
@@ -65,7 +65,7 @@ public class Baseclassmethod {
 	
 //5 
 	
-	public void sendvalues(WebElement element, String data) {
+	public static void sendvalues(WebElement element, String data) {
 		element.sendKeys(data);
 	}
 	
@@ -76,14 +76,14 @@ public class Baseclassmethod {
 	}
 	
 //7 
-	public void selectdropdownop(WebElement element, int index) {
+	public  static void selectdropdownop(WebElement element, int index) {
 		
 	Select select = new Select(element);
 	select.selectByIndex(index);
 		
 	}
 	//8
-	public List<WebElement> printdropdown(WebElement element) {
+	public static List<WebElement> printdropdown(WebElement element) {
 		Select select = new Select(element);
 		List <WebElement> options = select.getOptions();
 		// to print all of the options
@@ -93,7 +93,7 @@ public class Baseclassmethod {
 		return options;
 	}
 	//9
-	public String getdatafromexcel(int rowno, int cellno, String sheetname, String pathname) throws Exception {
+	public static String getdatafromexcel(int rowno, int cellno, String sheetname, String pathname) throws Exception {
 		String celldata = " ";
 		//1. to mention the path of the excel file to read
 		File file = new File(pathname);
@@ -123,19 +123,19 @@ public class Baseclassmethod {
 	}
 	
 //10 
-	public void waittime(int waiti) throws Exception {		
+	public static void waittime(int waiti) throws Exception {		
 		Thread.sleep(waiti);
 
 	}
 //11	
-	public void draganddrop(WebElement source, WebElement destination) {
+	public static void draganddrop(WebElement source, WebElement destination) {
 		Actions actions = new Actions(driver);
 		actions.dragAndDrop(source, destination).perform();
 		      
        
 	}
 	//12
-	public void screenshotpic() throws Exception {
+	public static void screenshotpic() throws Exception {
 		TakesScreenshot screenshot = (TakesScreenshot) driver;
 		File source = screenshot.getScreenshotAs(OutputType.FILE);
 		 String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
@@ -146,48 +146,48 @@ public class Baseclassmethod {
 
 	}
 	//13
-	public void doubleclickevent(WebElement test) {
+	public static void doubleclickevent(WebElement test) {
 		Actions actions = new Actions(driver);
 		actions.doubleClick(test).perform();
 
 	}
 	//14
-	public void contextclickevent(WebElement test) {
+	public static void contextclickevent(WebElement test) {
 		   Actions actions = new Actions(driver);
 		   actions.contextClick(test).perform();
 
 	}
 	// 15
-	public void movetoelementevent(WebElement test) {
+	public static void movetoelementevent(WebElement test) {
 		Actions actions = new Actions(driver);
 		actions.moveToElement(test).perform();
 	}
 	//16
-	public void clickevent(WebElement click1) {
+	public static void clickevent(WebElement click1) {
 		click1.click();
 	}
 	//17
-	public WebElement findelementclassname(String classname) {
+	public static WebElement findelementclassname(String classname) {
               WebElement elementclassname = driver.findElement(By.className(classname));
       return elementclassname;
 	}
 	//18
-	public WebElement findelementtagname(String tagname) {
+	public static WebElement findelementtagname(String tagname) {
              WebElement elementtagname = driver.findElement(By.tagName(tagname));
       return elementtagname;
 	}
 	//19
-     public WebElement findelementlinktext(String linktext) {
+     public static WebElement findelementlinktext(String linktext) {
             WebElement elementlinktext = driver.findElement(By.linkText(linktext));
             return elementlinktext;
 	}
      //20
-     public WebElement findelementpartiallink(String partiallink) {
+     public static WebElement findelementpartiallink(String partiallink) {
     	 WebElement elementpartiallink = driver.findElement(By.partialLinkText(partiallink));
     	 return elementpartiallink;
 	}
    //21
-     public void writedatatoexcel(int rowno, int cellno, String sheetname, String pathname, String data) throws Exception {
+     public static void writedatatoexcel(int rowno, int cellno, String sheetname, String pathname, String data) throws Exception {
     	 File file = new File(pathname);
     	 XSSFWorkbook workbook = new XSSFWorkbook(file);
     	 XSSFSheet sheet = workbook.createSheet(sheetname);
@@ -209,28 +209,28 @@ public class Baseclassmethod {
 
 	}
    //22
-     public JavascriptExecutor executorscript(String sc) { 
+     public static JavascriptExecutor executorscript(String sc) { 
     	 JavascriptExecutor executor = (JavascriptExecutor) driver;
     	 return executor;
 
 	}
      
     //23
-     public void switchtabaccept() {
+     public static void switchtabaccept() {
     	 driver.switchTo().alert().accept();
 	}
     //24
-     public void switchtabdismiss() {
+     public static void switchtabdismiss() {
     	 driver.switchTo().alert().dismiss();
 	}
     
      //25
-     public String switchtabgettext() {
+     public static String switchtabgettext() {
     	Alert alert = driver.switchTo().alert();
     	return alert.getText();  	
 	}
      //26
-     public void switchtabsendkeys(String sendtext) {
+     public static void switchtabsendkeys(String sendtext) {
     	 Alert text = driver.switchTo().alert();
     	 text.sendKeys(sendtext);
 	}

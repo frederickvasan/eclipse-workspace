@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(features = "C:\\Users\\fnobl\\eclipse-workspace"
 		+ "\\cucumbertest\\src\\test\\resources\\cucumber\\featureonline.feature", glue ="org.stepdef",
 		plugin = {"pretty","json:target/cucumber.json", "html:target/cucumber-reports.html"},
-		dryRun = true)
+		dryRun = false)
 public class testrunnerscenarioout {
 
 }

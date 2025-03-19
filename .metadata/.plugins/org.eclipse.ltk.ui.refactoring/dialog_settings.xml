@@ -6,8 +6,8 @@
 	</section>
 	<section name="RefactoringStatusDialog">
 		<item key="DIALOG_WIDTH" value="816"/>
-		<item key="DIALOG_HEIGHT" value="498"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|8.830189|0|WINDOWS|1|-13|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		<item key="DIALOG_HEIGHT" value="504"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.509434|0|WINDOWS|1|-14|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 	<section name="RefactoringWizard.Convert from JUnit">
 		<item key="width" value="730"/>

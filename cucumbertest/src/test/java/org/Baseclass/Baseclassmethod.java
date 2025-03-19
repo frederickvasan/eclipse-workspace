@@ -45,19 +45,19 @@ public class Baseclassmethod {
 	}
 	//2
 	
-	public WebElement findelementID(String id) {
+	public static WebElement findelementID(String id) {
 		WebElement elementId = driver.findElement(By.id(id));
 		return elementId;		
 
 	}
 	//3
-	public WebElement findelementname(String name) {
+	public static WebElement findelementname(String name) {
 		WebElement elementname = driver.findElement(By.name(name));
 		return elementname;		
 
 	}
 //4
-	public WebElement findelementxpath(String xpath) {
+	public static WebElement findelementxpath(String xpath) {
 		WebElement elementxpath = driver.findElement(By.xpath(xpath));
 		return elementxpath;		
 
@@ -65,7 +65,7 @@ public class Baseclassmethod {
 	
 //5 
 	
-	public void sendvalues(WebElement element, String data) {
+	public static void sendvalues(WebElement element, String data) {
 		element.sendKeys(data);
 	}
 	
