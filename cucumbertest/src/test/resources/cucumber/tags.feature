@@ -25,6 +25,13 @@ Scenario: login test with invalid credentials facebook2
 @function				
 Scenario: login test with invalid credentials facebook3
 					Given user should be in the facebook login3
-					When User should enter the Username and Password3
+					When User should enter the "<username>" and "<password>"
 					And User should click the login button3
 					Then User should verify the error message for the invalid credentials3
+					
+					
+Examples: 
+      | username  | password | 
+      | frederick@test.com |     Test123! |
+      | gerald@test.com |     Testing123! | 
+      | mani@test.com |     Testingmani123! | 

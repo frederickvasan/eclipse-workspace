@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "C:\\Users\\fnobl\\eclipse-workspace\\cucumbertest\\src\\test\\resources\\cucumber\\tags.feature", glue ="org.Regtest",
-plugin = {"json:target\\Report\\cucumberreportstags.json"},tags = "@regressionfeature")
+plugin = {"json:target\\Report\\cucumberreportstags.json"},tags = "@sanity")
 
 public class RegTestrunner {
 	

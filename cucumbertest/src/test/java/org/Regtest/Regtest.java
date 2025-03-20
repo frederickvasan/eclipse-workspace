@@ -90,10 +90,10 @@ public class Regtest  extends Baseclassmethod{
 		System.out.println("Browser Launched");
 
 	}
-	@When("User should enter the Username and Password3")
-	public void user_should_enter_the_username_and_password3() {
-		sendvalues(findelementID("email"), "Test@testing.com");
-		sendvalues(findelementID("pass"), "pass123!");
+	@When("User should enter the {string} and {string}")
+	public void user_should_enter_the_and(String username, String password) {
+		sendvalues(findelementID("email"), username);
+		sendvalues(findelementID("pass"), password);
 
 	}
 	@When("User should click the login button3")
