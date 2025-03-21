@@ -1,18 +1,13 @@
 package org.Reporting;
-
-
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
 import net.masterthought.cucumber.Configuration;
 import net.masterthought.cucumber.ReportBuilder;
-
 public class Reportingtest_tags {
 	
 	public static  void generatecucreport(String jsonFile) {
-
-		
 		File fl = new File("C:\\Users\\fnobl\\eclipse-workspace\\cucumbertest\\target\\cucumberreportstags");
 		
 		Configuration conf = new  Configuration(fl, "FB Functionallty");

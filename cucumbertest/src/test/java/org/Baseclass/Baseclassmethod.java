@@ -70,7 +70,7 @@ public class Baseclassmethod {
 	}
 	
 //6
-	public static void closewindow() {
+	public void closewindow() {
 		 driver.quit();
 
 	}
@@ -123,7 +123,7 @@ public class Baseclassmethod {
 	}
 	
 //10 
-	public void waittime(int waiti) throws Exception {		
+	public static void waittime(int waiti) throws Exception {		
 		Thread.sleep(waiti);
 
 	}
@@ -163,7 +163,7 @@ public class Baseclassmethod {
 		actions.moveToElement(test).perform();
 	}
 	//16
-	public void clickevent(WebElement click1) {
+	public static void clickevent(WebElement click1) {
 		click1.click();
 	}
 	//17
