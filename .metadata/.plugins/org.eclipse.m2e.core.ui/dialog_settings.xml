@@ -14,6 +14,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\fnobl\eclipse-workspace\cucumbertest"/>
 			<item value="C:\Users\fnobl\eclipse-workspace\JavaProjectFedric"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -26,6 +27,7 @@
 		</list>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
@@ -56,14 +58,12 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="Jsonsample"/>
-			<item value="orgCucumber"/>
+			<item value="Projectadactin"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="Samplejson"/>
-			<item value="cucumbertest"/>
+			<item value="adactin"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
