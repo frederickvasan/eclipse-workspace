@@ -11,6 +11,7 @@ import junit.framework.Assert;
 public class apibaseclass {
 	
 	public static RequestSpecification requestspec;
+	public static Response response;
 	// URL 
 	     public static  void urllocator(String baseURL) {
 	    	 RestAssured.baseURI = baseURL;
