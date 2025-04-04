@@ -14,8 +14,4 @@ public class Deleteapistep extends apibaseclass {
 		    response = responseobj(MethodType, "/api/users");
 
 	}
-
-
-
-
 }
