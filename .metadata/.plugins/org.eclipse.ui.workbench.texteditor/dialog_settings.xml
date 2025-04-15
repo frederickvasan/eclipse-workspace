@@ -9,6 +9,7 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="getatt"/>
 			<item value="a."/>
 			<item value="private"/>
 		</list>

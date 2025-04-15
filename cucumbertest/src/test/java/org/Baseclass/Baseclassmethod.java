@@ -19,6 +19,7 @@ import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.jspecify.annotations.Nullable;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -188,25 +189,55 @@ public class Baseclassmethod {
 	}
    //21
      public void writedatatoexcel(int rowno, int cellno, String sheetname, String pathname, String data) throws Exception {
+//    	 File file = new File(pathname);
+//    	 XSSFWorkbook workbook = new XSSFWorkbook(file);
+//    	 XSSFSheet sheet = workbook.createSheet(sheetname);
+//    	 Row row = sheet.getRow(rowno);
+//    	 if (row == null){
+//    		 row = sheet.createRow(rowno);			
+//		}
+//    	 Cell cell = row.getCell(cellno);
+//    	 if (cell == null) {
+//    		 row.createCell(cellno);
+//			
+//		}
+//    	 cell.setCellValue(data);
+//    	 FileOutputStream fileOutputStream = new FileOutputStream(file);
+//    	 workbook.write(fileOutputStream);
+//    	 
+//    	 
+//    	 System.out.println("Excel written successfully");
     	 File file = new File(pathname);
-    	 XSSFWorkbook workbook = new XSSFWorkbook(file);
-    	 XSSFSheet sheet = workbook.createSheet(sheetname);
-    	 Row row = sheet.getRow(rowno);
-    	 if (row == null){
-    		 row = sheet.createRow(rowno);			
-		}
-    	 Cell cell = row.getCell(cellno);
-    	 if (cell == null) {
-    		 row.createCell(cellno);
-			
-		}
-    	 cell.setCellValue(data);
-    	 FileOutputStream fileOutputStream = new FileOutputStream(file);
-    	 workbook.write(fileOutputStream);
-    	 
-    	 
-    	 System.out.println("Excel written successfully");
+    	    FileInputStream fis = new FileInputStream(file);
+    	    XSSFWorkbook workbook = new XSSFWorkbook(fis);
 
+    	    // Check if sheet exists, otherwise create it
+    	    XSSFSheet sheet = workbook.getSheet(sheetname);
+    	    if (sheet == null) {
+    	        sheet = workbook.createSheet(sheetname);
+    	    }
+
+    	    Row row = sheet.getRow(rowno);
+    	    if (row == null) {
+    	        row = sheet.createRow(rowno);
+    	    }
+
+    	    Cell cell = row.getCell(cellno);
+    	    if (cell == null) {
+    	        cell = row.createCell(cellno);
+    	    }
+
+    	    cell.setCellValue(data);
+
+    	    fis.close(); // Close input stream before writing
+
+    	    FileOutputStream fileOutputStream = new FileOutputStream(file);
+    	    workbook.write(fileOutputStream);
+    	    fileOutputStream.close();
+    	    workbook.close();
+
+    	    System.out.println("Excel written successfully");
+    	 
 	}
    //22
      public JavascriptExecutor executorscript(String sc) { 
@@ -239,6 +270,73 @@ public class Baseclassmethod {
     	 element.getAttribute(value);
     	 return value;
 
+	}
+     
+     //28
+     public void setDateByInput(WebElement element, String dateValue) {
+    	 element.clear();
+    	 element.sendKeys(dateValue);
+     }
+     
+     //29
+//     public void selectDate(String day, String month, String year) {
+//         // 1. Click the date input to open the calendar
+//         WebElement dateInput = driver.findElement(By.id("dateOfBirthInput"));
+//         dateInput.click();
+//
+//         // 2. Select year
+//         WebElement yearDropdown = driver.findElement(By.className("react-datepicker__year-select"));
+//         Select yearSelect = new Select(yearDropdown);
+//         yearSelect.selectByVisibleText(year);
+//
+//         // 3. Select month
+//         WebElement monthDropdown = driver.findElement(By.className("react-datepicker__month-select"));
+//         Select monthSelect = new Select(monthDropdown);
+//         monthSelect.selectByVisibleText(month);
+//
+//         // 4. Select day (pad to 2 digits if needed)
+//         String dayFormatted = String.format("%02d", Integer.parseInt(day));
+//
+//         // Handle leading zeroes and exact class matching
+//         WebElement dayElement = driver.findElement(By.xpath("//div[contains(@class, 'react-datepicker__day') and text()='" + dayFormatted + "'] and not(contains(@class, 'outside-month'))"));
+//
+//         dayElement.click();
+//     }
+     //29
+     public void selectDate(String day, String month, String year) {
+    	    WebElement dateInput = driver.findElement(By.id("dateOfBirthInput"));
+
+    	    // Scroll and click using JavaScript to avoid overlay issues
+    	    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", dateInput);
+    	    ((JavascriptExecutor) driver).executeScript("arguments[0].click();", dateInput);
+
+    	    // Select year and month
+    	    new Select(driver.findElement(By.className("react-datepicker__year-select")))
+    	            .selectByVisibleText(year);
+
+    	    new Select(driver.findElement(By.className("react-datepicker__month-select")))
+    	            .selectByVisibleText(month);
+
+    	    // Format and click day
+    	    String formattedDay = String.format("%02d", Integer.parseInt(day));
+    	    String dayClass = "react-datepicker__day--0" + formattedDay;
+
+    	    WebElement dayElement = driver.findElement(By.xpath(
+    	        "//div[contains(@class, '" + dayClass + "') and not(contains(@class, 'outside-month'))]"
+    	    ));
+    	    dayElement.click();
+    	}
+     
+     //30
+     public String getAttribute(WebElement element, String attributeName) {
+         return element.getAttribute(attributeName);
+     }
+     
+     //31
+     public   void gettitle() {
+        String getitle = driver.getTitle();
+        return;
+    	 
 	}
 }
 

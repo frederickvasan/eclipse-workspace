@@ -47,7 +47,6 @@
     <fullyQualifiedTypeName name="org.serialization.Tags"/>
     <fullyQualifiedTypeName name="org.serialization.petstore"/>
     <fullyQualifiedTypeName name="org.robot.Baseclassmethod"/>
-    <fullyQualifiedTypeName name="org.Baseclass.Baseclassmethod"/>
     <fullyQualifiedTypeName name="org.junit.AfterClass"/>
     <fullyQualifiedTypeName name="org.Reporting.Reportingtest"/>
     <fullyQualifiedTypeName name="org.Reporting.Hooksreporting"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="io.cucumber.java.en.When"/>
     <fullyQualifiedTypeName name="org.apibase.apibaseclass"/>
     <fullyQualifiedTypeName name="reportapi.reportsapi"/>
+    <fullyQualifiedTypeName name="org.Baseclass.Baseclassmethod"/>
 </qualifiedTypeNameHistroy>
